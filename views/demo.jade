@@ -1,6 +1,10 @@
 //
    Created by Kaboyi on 2016/12/17.
-script(src='/javascripts/angular.min.js')
-div(ng-model)
-    input(gn-model='yourName' placeholder='Enter a name here')
-    h1 Hello, {{youerName}}!
+html(ng-app='')
+    head
+        script(src='/javascripts/angular.min.js')
+        //script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
+    body
+        div
+            input(ng-model='yourName' placeholder='Enter a name here' value='c')
+            h1 Hello, {{ yourName }}!

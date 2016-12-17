@@ -1,6 +1,8 @@
 extends layout
 block script
     script(src='javascripts/Sortable.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js')
     script(lang='javascript').
         Sortable.create(sortList,{})
         Sortable.create(listWithHandle,{
@@ -10,8 +12,6 @@ block script
         function list() {
 
         }
-        script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js')
-        script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js')
         var app = angular
 block content
     h1= title
