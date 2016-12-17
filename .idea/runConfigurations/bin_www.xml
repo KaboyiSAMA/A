@@ -4,6 +4,10 @@
       <env name="DEBUG" value="node:*" />
     </envs>
     <browser url="http://localhost:3000/" />
+    <profiling log-folder="../../node/../../node/../../node/../../node/../../node/../../node/../../node/../../node/../../node/../../node" v8-profiler-path="" />
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
+      <profiling log-folder="../../node/../../node/../../node/../../node/../../node/../../node/../../node/../../node/../../node/../../node" v8-profiler-path="" />
+    </EXTENSION>
     <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
       <browser url="http://localhost:3000/" />
     </EXTENSION>
