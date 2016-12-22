@@ -1,38 +1,42 @@
 extends layout
-block script
-    script(src='javascripts/Sortable.js')
-    script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js')
-    script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js')
-    script(lang='javascript').
-        Sortable.create(sortList,{})
-        Sortable.create(listWithHandle,{
-            handle:'.glyphicon-move',
-            animation:150
-        })
-        function list() {
-
-        }
-        var app = angular
 block content
     h1= title
     p Welcome to #{title}
     form(name='form')
             input(type='button' onclick=list value='查看列表数据')
-            #listWithHandle.list-group
-                .list-group-item
-                    span.badge 15
-                    input.glyphicon.glyphicon-move(name='av' style='width:550px' aria-hidden='true' ng-model='user.email' value='&nbsp;Drag me by the handle')
-                .list-group-item
-                    span.badge 11
-                    input.glyphicon.glyphicon-move(name='av' style='width:550px' aria-hidden='true' ng-model='user.email' value='&nbsp;You can also select me text)')
-                .list-group-item
-                    span.badge 1
-                    input.glyphicon.glyphicon-move(name='av' style='width:550px' aria-hidden='true' ng-model='user.email' value='&nbsp;Best of both worlds!')
-
-            #sortList.list-group
-                .list-group-item This is a a(href='/So') Sortable
-                .list-group-item It works with Bootstrap...
-                .list-group-item ... out of the box.
-                .list-group-item It has support for touch device
-                .list-group-item Just drag some elements around.
+            table
+                tr
+                    td#listWithHandle.list-group
+                            .list-group-item
+                                span.badge 15
+                                input.glyphicon.glyphicon-move(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='&nbsp;Drag me by the handle')
+                            .list-group-item
+                                span.badge 11
+                                input.glyphicon.glyphicon-move(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='&nbsp;You can also select me text)')
+                            .list-group-item
+                                span.badge 1
+                                input.glyphicon.glyphicon-move(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='&nbsp;Best of both worlds!')
+                            .list-group-item
+                                span.badge 1
+                                input.glyphicon.glyphicon-move(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='&nbsp;Best of both worlds!')
+                            .list-group-item
+                                span.badge 1
+                                input.glyphicon.glyphicon-move(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='&nbsp;Best of both worlds!')
+                    td
+                    td#sortList.list-group
+                            .list-group-item This is a a(href='/So') Sortable
+                            .list-group-item It works with Bootstrap...
+                            .list-group-item ... out of the box.
+                            .list-group-item It has support for touch device
+                            .list-group-item Just drag some elements around.
     include demo
+    script(lang='javascript').
+        Sortable.create(sortList, {})
+        Sortable.create(listWithHandle, {
+            handle: '.glyphicon-move',
+            animation: 150
+        })
+        function list() {
+
+        }
+        var app = angular

@@ -2,9 +2,15 @@
    Created by Kaboyi on 2016/12/17.
 html(ng-app='')
     head
-        script(src='//code.angularjs.org/1.1.0/angular.min.js')
+        script(src='javascripts/Sortable.js')
+        script(src='javascripts/angular.min.js')
+        script(src='javascripts/angular-route.min.js')
+        //script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js')
+        //script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js')
+
+        //script(src='//code.angularjs.org/1.1.0/angular.min.js')
         //script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
     body
         div
-            input(ng-model='yourName' placeholder='Enter a name here' value='c')
+            input(ng-model='yourName' placeholder='Enter a name here')
             h1 Hello, {{ yourName }}!
