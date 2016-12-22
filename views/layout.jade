@@ -1,9 +1,10 @@
 doctype html
-html
+html(ng-app='imp')
     head
         title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
+        script(src='javascripts/imp.js')
+        link(rel='stylesheet', href='stylesheets/style.css')
+        link(rel='stylesheet' href='stylesheets/bootstrap.min.css')
         //link(rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
     body(ng-app)
         block content
