@@ -22,7 +22,7 @@ angular.module('angularRestfulAuth')
     $scope.signup=function () {
         var formData = {
             email:$scope.email,
-            paswsword:$scope.password
+            password:$scope.password
         }
         Main.save(formData, function (res) {
             if(res.type==false){

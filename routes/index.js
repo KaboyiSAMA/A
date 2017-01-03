@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose')
-var User = require('./models/User')
-mongoose.connect(process.env.MONOGODBPORT || '27017')
+var User = require('../model/User')
+mongoose.connect(process.env.MONOGODBPORT || 'localhost:27017')
 var jwt = require('jsonwebtoken')
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express'});
+    res.render('index', {title: '伏魔录'});
 });
 router.post('/authenticate', function (req, res) {
     User.findOne(

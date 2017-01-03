@@ -2,6 +2,8 @@
   <dictionary name="Kaboyi">
     <words>
       <w>angularjs</w>
+      <w>signin</w>
+      <w>signup</w>
     </words>
   </dictionary>
 </component>
