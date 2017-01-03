@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec78ece8-4189-4d9d-8b8e-6d58b36a7ee6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/loading-bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/ngStorage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Kaboyi.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Kaboyi.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="2b2e2352-9451-4377-b159-da1531f64474" name="Default 2" comment="Default 2" />
@@ -1069,7 +1066,7 @@
       <workItem from="1483450028222" duration="75000" />
       <workItem from="1483450288499" duration="278000" />
       <workItem from="1483450585376" duration="711000" />
-      <workItem from="1483451317777" duration="5000000" />
+      <workItem from="1483451317777" duration="5008000" />
     </task>
     <task id="LOCAL-00001" summary="1&#10;">
       <created>1481947954822</created>
@@ -1162,11 +1159,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483457475253</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1&#10;">
+      <created>1483457544958</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1483457544958</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48215000" />
+    <option name="totallyTimeSpent" value="48223000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
