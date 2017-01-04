@@ -4,8 +4,7 @@
     <list default="true" id="ec78ece8-4189-4d9d-8b8e-6d58b36a7ee6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/DRCtrl.xml" afterPath="$PROJECT_DIR$/.idea/libraries/DRCtrl.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/DRCtrl.js" afterPath="$PROJECT_DIR$/routes/DRApp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/DRApp.js" afterPath="$PROJECT_DIR$/public/javascripts/DRApp.js" />
     </list>
     <list id="2b2e2352-9451-4377-b159-da1531f64474" name="Default 2" comment="Default 2" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,12 +32,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <file leaf-file-name="DRApp.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/DRApp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-              <folding />
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -598,6 +599,7 @@
       <recent name="D:\node\public\stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\node\public\javascripts" />
       <recent name="D:\node\routes" />
       <recent name="D:\node\public\stylesheets" />
       <recent name="D:\node\public" />
@@ -1066,7 +1068,7 @@
       <workItem from="1483450288499" duration="278000" />
       <workItem from="1483450585376" duration="711000" />
       <workItem from="1483451317777" duration="6226000" />
-      <workItem from="1483536829975" duration="4654000" />
+      <workItem from="1483536829975" duration="4804000" />
     </task>
     <task id="LOCAL-00001" summary="1&#10;">
       <created>1481947954822</created>
@@ -1187,11 +1189,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483545276680</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1&#10;">
+      <created>1483545483660</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1483545483660</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54095000" />
+    <option name="totallyTimeSpent" value="54245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1204,7 +1213,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="532" width="1516" height="515" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24827586" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1221,7 +1230,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20466666" sideWeight="0.4907162" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20466666" sideWeight="0.4907162" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1613,33 +1622,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DRApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="408">
+          <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="32" />
           <folding>
-            <marker date="1483545459914" expanded="false" signature="0:43" ph="/** Created by Kaboyi on 2016/12/22. ...*/" />
-            <marker date="1483545459914" expanded="true" signature="67:136" ph="[...]" />
-            <marker date="1483545459914" expanded="true" signature="146:352" ph="[...]" />
-            <marker date="1483545459914" expanded="true" signature="223:351" ph="{...}" />
-            <marker date="1483545459914" expanded="true" signature="262:348" ph="{&quot;templateUrl&quot;: 'views/demo.jade'...}" />
+            <marker date="1483545538795" expanded="true" signature="17:2273" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="42:806" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="815:2273" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="827:1628" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="882:1537" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="912:978" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="998:1537" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1046:1537" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1088:1134" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1161:1233" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1260:1334" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1361:1435" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1462:1537" ph="..." />
+            <marker date="1483545538795" expanded="true" signature="1553:1593" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <marker date="1483540603801" expanded="true" signature="234:254" ph="/*...*/" />
+            <marker date="1483540603801" expanded="true" signature="297:341" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="409:1068" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="520:1065" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="543:667" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="570:652" ph="{&quot;data&quot;: err...}" />
+            <marker date="1483540603801" expanded="true" signature="673:1055" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="701:888" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="732:869" ph="{&quot;data&quot;: user...}" />
+            <marker date="1483540603801" expanded="true" signature="894:1041" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="925:1022" ph="{&quot;data&quot;: '密码错误'...}" />
+            <marker date="1483540603801" expanded="true" signature="1113:1955" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="1215:1952" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="1238:1362" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="1265:1347" ph="{&quot;data&quot;: err...}" />
+            <marker date="1483540603801" expanded="true" signature="1368:1942" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="1553:1927" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="1694:1908" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="1730:1885" ph="{&quot;data&quot;: user1...}" />
+            <marker date="1483540603801" expanded="true" signature="2013:2315" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2073:2312" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2092:2196" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2115:2185" ph="{&quot;data&quot;: err...}" />
+            <marker date="1483540603801" expanded="true" signature="2202:2306" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2225:2295" ph="{&quot;data&quot;: user...}" />
+            <marker date="1483540603801" expanded="true" signature="2359:2640" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2474:2603" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2609:2638" ph="{...}" />
+            <marker date="1483540603801" expanded="true" signature="2688:2712" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/DRApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
