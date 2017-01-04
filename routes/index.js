@@ -7,7 +7,7 @@ var jwt = require('jsonwebtoken')
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {title: '伏魔录'});
-});
+});//TODO 明天把链接都弄出来
 router.post('/authenticate', function (req, res) {
     User.findOne(
         {email: req.body.email, password: req.body.password},

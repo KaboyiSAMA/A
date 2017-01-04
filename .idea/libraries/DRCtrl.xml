@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="DRCtrl" type="javaScript">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/public/javascripts/angular-route.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/angular.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/jquery.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/ngStorage.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/routes/DRCtrl.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/Sortable.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/controllers.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/loading-bar.js" />
+    </SOURCES>
+  </library>
+</component>
