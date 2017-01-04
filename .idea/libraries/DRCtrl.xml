@@ -9,7 +9,7 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/routes/DRCtrl.js" />
+      <root url="file://$PROJECT_DIR$/routes/DRApp.js" />
       <root url="file://$PROJECT_DIR$/public/javascripts/Sortable.js" />
       <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.js" />
       <root url="file://$PROJECT_DIR$/public/javascripts/controllers.js" />

@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec78ece8-4189-4d9d-8b8e-6d58b36a7ee6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/DRCtrl.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/DRCtrl.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/imp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/npm.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Kaboyi.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Kaboyi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/DRCtrl.xml" afterPath="$PROJECT_DIR$/.idea/libraries/DRCtrl.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.iml" afterPath="$PROJECT_DIR$/node.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/DRCtrl.js" afterPath="$PROJECT_DIR$/routes/DRApp.js" />
     </list>
     <list id="2b2e2352-9451-4377-b159-da1531f64474" name="Default 2" comment="Default 2" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,14 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DRCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/DRCtrl.js">
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,8 +111,10 @@
         <option value="$PROJECT_DIR$/public/stylesheets/loading-bar.css" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/javascripts/imp.js" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/DRCtrl.js" />
+        <option value="$PROJECT_DIR$/routes/DRCtrl.js" />
+        <option value="$PROJECT_DIR$/routes/DRApp.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
       </list>
     </option>
   </component>
@@ -556,12 +550,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-newsletter-beginner-series" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1054,7 +1066,7 @@
       <workItem from="1483450288499" duration="278000" />
       <workItem from="1483450585376" duration="711000" />
       <workItem from="1483451317777" duration="6226000" />
-      <workItem from="1483536829975" duration="4442000" />
+      <workItem from="1483536829975" duration="4654000" />
     </task>
     <task id="LOCAL-00001" summary="1&#10;">
       <created>1481947954822</created>
@@ -1168,11 +1180,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483458605012</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1&#10;">
+      <created>1483545276680</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1483545276680</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53883000" />
+    <option name="totallyTimeSpent" value="54095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1185,7 +1204,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="532" width="1516" height="515" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24827586" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1202,9 +1221,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20466666" sideWeight="0.4907162" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20466666" sideWeight="0.4907162" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1594,14 +1613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1610,13 +1621,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DRCtrl.js">
+    <entry file="file://$PROJECT_DIR$/routes/DRApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="22">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
-            <element signature="e#0#43#0" expanded="false" />
+            <marker date="1483545459914" expanded="false" signature="0:43" ph="/** Created by Kaboyi on 2016/12/22. ...*/" />
+            <marker date="1483545459914" expanded="true" signature="67:136" ph="[...]" />
+            <marker date="1483545459914" expanded="true" signature="146:352" ph="[...]" />
+            <marker date="1483545459914" expanded="true" signature="223:351" ph="{...}" />
+            <marker date="1483545459914" expanded="true" signature="262:348" ph="{&quot;templateUrl&quot;: 'views/demo.jade'...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
