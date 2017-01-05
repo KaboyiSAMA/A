@@ -37,8 +37,9 @@ html(ng-app='DRApp')
                         li(data-ng-show='token')
                             a(ng-href='logout()') 登出
             div.container
-                block content
+            div.content
             div.container(ng-view)
+                block content
         //block script
         script(src='/javascripts/jquery.min.js')
         //script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
@@ -51,3 +52,4 @@ html(ng-app='DRApp')
         script(src='/javascripts/ngStorage.js')
         script(src='/javascripts/loading-bar.js')
         script(src='/javascripts/DRApp.js')
+        script(src='/javascripts/EXTApp.js')
