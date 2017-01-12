@@ -6,8 +6,8 @@ mongoose.connect(process.env.MONOGODBPORT || 'localhost:27017')
 var jwt = require('jsonwebtoken')
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: '伏魔录'});
-});//TODO 明天把链接都弄出来
+    res.render('index', {title: '伏魔录O'});
+});
 router.post('/authenticate', function (req, res) {
     User.findOne(
         {email: req.body.email, password: req.body.password},
@@ -15,31 +15,30 @@ router.post('/authenticate', function (req, res) {
             if (err) {
                 res.json({
                     type: false,
-                    data: err
+                    data: err||'登录失败'
                 })
-            } else {
-                if (user) {
+            } else if (user) {
                     res.json({
                         type: true,
                         data: user,
                         token: user.token
                     })
-                } else {
-                    res.json({
-                        type: false,
-                        data: '密码错误'
-                    })
-                }
+            } else {
+                res.json({
+                    type: false,
+                    data: '密码错误'
+                })
             }
         })
 })
-router.post('/signin', function (req, res) {
+router.post('/signup', function (req, res) {
     User.findOne({email: req.body.email, password: req.body.password},
         function (err, user) {
+            console.log('UP', user)
             if (err) {
                 res.json({
                     type: false,
-                    data: err
+                    data: err||'注册失败'
                 })
             } else {
                 var user$ = new User()
@@ -48,7 +47,7 @@ router.post('/signin', function (req, res) {
                 user$.save(function (err, user) {
                     user.token = jwt.sign(user, process.env.JWT_SECRET || 'ZZZCCCVVV')
                     user.save(function (err, user1) {
-                        user.json({
+                        res.json({
                             type: true,
                             data: user1,
                             token: user1.token

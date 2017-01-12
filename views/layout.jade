@@ -1,5 +1,5 @@
 doctype html
-html(ng-app='DRApp')
+html
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -19,27 +19,32 @@ html(ng-app='DRApp')
         script(src="//oss.maxcdn.com/respond/1.4.2/respond.min.js")
         script(src="/javascripts/ext-all.js")
 
-    body
-        div.navbar.navbar-inverse.navbar-fixed-top
+    body(ng-app='DRApp')
+        //TODO 这个功能给完善一下,好么
+        div.navbar-fixed-topnavbar.navbar-inverse.navbar-fixed-top(role="navigation" data-ng-controller="DRHomeCtrl")
             div.container
                 div.navbar-header
-                    a.navbar-brand(href='#') #{title}O
+                    button.navbar-toggle.collapse(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                        span.sr-only TO
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='#') #{title}
                 div.navbar-collapse.collapse
                     ul.nav.navbar-nav
                         li
-                            a(ng-href='/') 主页
+                            a(ng-href='#/') 主页
                         li(data-ng-show='token')
-                            a(ng-href='/me') 我的世界
+                            a(ng-href='#/me') 我的世界
                         li(data-ng-hide='token')
-                            a(ng-href='/signin') 注册
+                            a(ng-href='#/signin') 登录
                         li(data-ng-hide='token')
-                            a(ng-href='/signup') 登录
+                            a(ng-href='#/signup') 注册
                         li(data-ng-show='token')
                             a(ng-href='logout()') 登出
             div.container
-            div.content
-            div.container(ng-view)
                 block content
+            div.container(ng-view)
         //block script
         script(src='/javascripts/jquery.min.js')
         //script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
@@ -52,4 +57,6 @@ html(ng-app='DRApp')
         script(src='/javascripts/ngStorage.js')
         script(src='/javascripts/loading-bar.js')
         script(src='/javascripts/DRApp.js')
-        script(src='/javascripts/EXTApp.js')
+        script(src='/javascripts/DRHomeCtrl.js')
+        script(src='/javascripts/DRServices.js')
+        //script(src='/javascripts/EXTApp.js')

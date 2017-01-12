@@ -21,7 +21,7 @@ cb.on('select',function () {
     console.log(arguments)
 })
 var form = new Ext.form.FormPanel({
-    // frame:true,
+    frame:true,
     title:'表单K',
     style:'margin:10px',
     html:'<div style="padding:10px">这里表单内容</div>',

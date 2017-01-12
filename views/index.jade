@@ -1,27 +1,28 @@
 extends layout
 block content
     h1= title
-    p Welcome to #{title}
-    form(name='form')
-        input(type='button' onclick=list value='查看列表数据')
-        table
-            tr
-                td#listWithHandle.list-group
-                    .list-group-item
-                        span.badge 15
-                        input.glyphicon.glyphicon-move(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='Drag me by the handle')
-                        input(name='avi')
-                td
-                td#sortList.list-group
-                    .list-group-item Just drag some elements around.
-    include demo
-    script(lang='javascript').
-        Sortable.create(sortList, {})
-        Sortable.create(listWithHandle, {
-            handle: '.glyphicon-move',
-            animation: 150
-        })
-        function list() {
-
-        }
-        var app = angular
+    //form(name='form')
+    //    input(type='button' onclick=list value='查看列表数据')
+    //    table
+    //        tr
+    //            td#listWithHandle.list-group
+    //                .list-group-item.glyphicon.glyphicon-move
+    //                    span.badge 15
+    //                    input(name='av' style='width:350px' aria-hidden='true' ng-model='user.email' value='Drag me by the handle')
+    //                    input(name='avi')
+    //            td
+    //            td#sortList.list-group
+    //                .list-group-item Just drag some elements around.
+    //br
+    //br
+    //include demo
+    //script(lang='javascript').
+    //    Sortable.create(sortList, {})
+    //    Sortable.create(listWithHandle, {
+    //        handle: '.glyphicon-move',
+    //        animation: 150
+    //    })
+    //    function list() {
+    //
+    //    }
+    //    var app = angular

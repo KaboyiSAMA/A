@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <strong>登录X</strong>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form" ng-submit="signin()">
+                <div class="form-group">
+                    <label for="email" class="control-label">邮箱</label>
+                    <div>
+                        <input type="email" class="form-control" id="email" placeholder="邮箱" ng-model="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="control-label">密码</label>
+                    <div>
+                        <input type="password" class="form-control" id="password" placeholder="密码" ng-model="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
