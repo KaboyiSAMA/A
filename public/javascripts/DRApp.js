@@ -23,15 +23,19 @@ angular.module('DRApp', [
                 templateUrl: '/partials/me.html',
                 controller: 'DRMeCtrl'
             })
+            .when('/me/updateGame', {
+                templateUrl: '/partials/me.html',
+                controller: 'DRMeCtrl'
+            })
             .otherwise({
-                redirectTo: '/me'
+                redirectTo: '/'
             })
         $httpProvider.interceptors.push(['$q', '$location', '$localStorage', function ($q, $location, $localStorage) {
             return {
                 'request': function (config) {
                     config.headers = config.headers || {}
                     if ($localStorage.token)
-                        config.headers.Authorization = 'KA ' + $localStorage.token
+                        config.headers.Authorization = 'KA_' + $localStorage.token
                     return config
                 },
                 'responseError': function (res) {

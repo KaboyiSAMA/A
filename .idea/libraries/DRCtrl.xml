@@ -2,27 +2,26 @@
   <library name="DRCtrl" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/public/javascripts/DRApp.js" />
         <item url="file://$PROJECT_DIR$/public/javascripts/Sortable.js" />
         <item url="file://$PROJECT_DIR$/public/javascripts/bootstrap.js" />
-        <item url="file://$PROJECT_DIR$/public/javascripts/controllers.js" />
+        <item url="file://$PROJECT_DIR$/public/javascripts/DRApp.js" />
         <item url="file://$PROJECT_DIR$/public/javascripts/loading-bar.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/public/javascripts/angular-route.min.js" />
-      <root url="file://$PROJECT_DIR$/public/javascripts/angular.min.js" />
-      <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.min.js" />
       <root url="file://$PROJECT_DIR$/public/javascripts/jquery.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/angular-route.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/angular.min.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/Sortable.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/DRApp.js" />
       <root url="file://$PROJECT_DIR$/public/javascripts/ngStorage.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/loading-bar.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/public/javascripts/DRApp.js" />
-      <root url="file://$PROJECT_DIR$/public/javascripts/Sortable.js" />
-      <root url="file://$PROJECT_DIR$/public/javascripts/bootstrap.js" />
       <root url="file://$PROJECT_DIR$/public/javascripts/controllers.js" />
-      <root url="file://$PROJECT_DIR$/public/javascripts/loading-bar.js" />
     </SOURCES>
   </library>
 </component>

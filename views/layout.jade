@@ -20,7 +20,6 @@ html
         script(src="/javascripts/ext-all.js")
 
     body(ng-app='DRApp')
-        //TODO 这个功能给完善一下,好么
         div.navbar-fixed-topnavbar.navbar-inverse.navbar-fixed-top(role="navigation" data-ng-controller="DRHomeCtrl")
             div.container
                 div.navbar-header
@@ -41,7 +40,8 @@ html
                         li(data-ng-hide='token')
                             a(ng-href='#/signup') 注册
                         li(data-ng-show='token')
-                            a(ng-href='logout()') 登出
+                            //a(ng-href='logout()') 登出
+                            a(ng-href='#/logout') 登出
             div.container
                 block content
             div.container(ng-view)

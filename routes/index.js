@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose')
+// var oracledb = require('oracledb')
 var User = require('../model/User')
 mongoose.connect(process.env.MONOGODBPORT || 'localhost:27017')
 var jwt = require('jsonwebtoken')
@@ -74,6 +75,7 @@ router.get('/me', ensureAuthorized, function (req, res) {
 })
 function ensureAuthorized(req, res, next) {
     var bearerToken
+    //TODO 需要解决这个问题了
     var bearerHeader = req.header['authoriation']
     if(typeof bearerToken !== 'undefined') {
         var bearer = bearerHeader.split(' ')

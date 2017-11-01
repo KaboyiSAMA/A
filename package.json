@@ -12,10 +12,10 @@
     "express": "~4.14.0",
     "hotnode": "0.0.8",
     "jade": "~1.11.0",
+    "jsonwebtoken": "latest",
     "mongoose": "^4.7.4",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
-    "supervisor": "latest",
-    "jsonwebtoken": "latest"
+    "supervisor": "latest"
   }
 }
