@@ -3,23 +3,23 @@
  */
 angular.module('DRApp')
 	.factory('Main', ['$http', '$localStorage', function ($http, $localStorage) {
-		var baseUrl = ''
+		var baseUrl = '';
 
 		function changeUser(user) {
 			angular.extend(currentUser, user)
 		}
 
 		function urlBase64Decode(str) {
-			var output = str.replace('-', '+').replace('_', '/')
+			var output = str.replace('-', '+').replace('_', '/');
 			switch (output.length % 4) {
 				case 0:
-					break
+					break;
 				case 2:
-					output += '=='
-					break
+					output += '==';
+					break;
 				case 3:
-					output += '='
-					break
+					output += '=';
+					break;
 				default:
 					throw '非法的base64url字符串'
 			}
@@ -27,16 +27,16 @@ angular.module('DRApp')
 		}
 
 		function getUserFromToken() {
-			var token = $localStorage.token
-			var user = {}
+			var token = $localStorage.token;
+			var user = {};
 			if (typeof token !== 'undefined') {
-				var encoded = token.split('.')[1]
+				var encoded = token.split('.')[1];
 				user = JSON.parse(urlBase64Decode(encoded))
 			}
 			return user
 		}
 
-		var currentUser = getUserFromToken()
+		var currentUser = getUserFromToken();
 		return {
 			save: function (data, success, error) {//注册(signup)
 				$http.post(baseUrl + '/signup', data).success(success).error(error)
@@ -48,18 +48,12 @@ angular.module('DRApp')
 				$http.get(baseUrl + '/#/me').success(success).error(error)
 			},
 			logout: function (success) {
-				changeUser({})
-				delete $localStorage.token
+				changeUser({});
+				delete $localStorage.token;
 				success()
 			},
+			updateGame: function (success, error) {
+				$http.get(baseUrl + '/updateGame').success(success).error(error)
+			},
 		}
-	}])
-	.factory('Me', ['$http', '$localStorage', function ($http, $localStorage) {
-	var baseUrl = 'me/'
-
-	return {
-		updateGame: function (success, error) {
-			$http.get(baseUrl + '/#/me/updateGame').success(success).error(error)
-		},
-	}
-}])
+	}]);

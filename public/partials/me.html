@@ -1,24 +1,34 @@
-<div class="row" data-ng-controller="DRMeCtrl">
+<div class="row" data-ng-controller="DRHomeCtrl">
 	<div class="panel panel-primary">
 		<div class="panel-heading">
 			<strong>X==我的世界==X</strong>
 		</div>
 		<div class="panel-body">
 			<form novalidate>
-				<div>游戏名:<input type="text" ng-model="title"></div>
-				<div>思想:<textarea ng-model="desc"></textarea></div>
+				<input type="hidden" ng-model="_id">
+				<div><label>
+					游戏名:
+					<input type="text" ng-model="title">
+				</label></div>
+				<div><label>
+					思想:
+					<textarea ng-model="desc"></textarea>
+				</label></div>
 				<div>
 					<button ng-click="submit()">提交</button>
+				</div>
+				<div>
+					<div ng-model="error"></div>
 				</div>
 			</form>
 		</div>
 	</div>
 </div>
 <!--<script>-->
-	<!--var app = angular.module('DRMeCtrl', [])-->
-	<!--app.controller('formCtrl', function ($scope) {-->
-		<!--$scope.sumbit = function () {-->
-			<!---->
-		<!--}-->
-	<!--})-->
+<!--var app = angular.module('DRMeCtrl', [])-->
+<!--app.controller('formCtrl', function ($scope) {-->
+<!--$scope.sumbit = function () {-->
+<!---->
+<!--}-->
+<!--})-->
 <!--</script>-->

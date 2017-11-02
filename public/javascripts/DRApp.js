@@ -21,11 +21,11 @@ angular.module('DRApp', [
             })
             .when('/me', {
                 templateUrl: '/partials/me.html',
-                controller: 'DRMeCtrl'
+                controller: 'DRHomeCtrl'
             })
             .when('/me/updateGame', {
                 templateUrl: '/partials/me.html',
-                controller: 'DRMeCtrl'
+                controller: 'DRHomeCtrl'
             })
             .otherwise({
                 redirectTo: '/'
