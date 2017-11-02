@@ -77,7 +77,11 @@ router.get('/me', ensureAuthorized, function (req, res) {
 });
 router.get('/updateGame', ensureAuthorized, function (req, res) {
 	console.log('uG');
-	game.save({_id: req._id,title: req.title,desc: req.desc}, function (err, game) {
+	game.save({
+		_id: req._id,
+		title: req.title,
+		desc: req.desc
+	}, function (err, game) {
 		if (err) {
 			res.json({
 				type: false,

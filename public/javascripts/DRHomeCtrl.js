@@ -18,7 +18,7 @@ angular.module('DRApp')
 					window.location = '/'
 				}
 			}, function () {
-				console.log('失败');
+				console.log('失败', arguments);
 				$rootScope.error = '签到失败'
 			})
 		};
@@ -67,10 +67,10 @@ angular.module('DRApp')
 		}
 		$scope.token = $localStorage.token
 	}])
-	// .controller('DRMeCtrl', ['$rootScope', '$scope', '$location', 'Main', function ($rootScope, $scope, $location, Main) {
-		// Main.me(function (res) {
-		// 	$scope.myDetails = res;
-		// }, function () {
-		// 	$rootScope.error = '获取详细信息失败';
-		// })
-	// }]);
+// .controller('DRMeCtrl', ['$rootScope', '$scope', '$location', 'Main', function ($rootScope, $scope, $location, Main) {
+// Main.me(function (res) {
+// 	$scope.myDetails = res;
+// }, function () {
+// 	$rootScope.error = '获取详细信息失败';
+// })
+// }]);
